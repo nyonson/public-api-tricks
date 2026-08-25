@@ -1,0 +1,9 @@
+[package]
+edition = "2021"
+name = "other-lib-name"
+version = "0.1.0"
+description = "This crate is published only to serve as a regression test for https://github.com/cargo-public-api/cargo-public-api/issues/561"
+license = "MIT"
+
+[lib]
+name = "other_name"

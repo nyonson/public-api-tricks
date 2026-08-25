@@ -1,0 +1,73 @@
+pub mod auto_traits
+pub struct auto_traits::NotSendNorSync
+impl core::marker::Freeze for auto_traits::NotSendNorSync
+impl !core::marker::Send for auto_traits::NotSendNorSync
+impl !core::marker::Sync for auto_traits::NotSendNorSync
+impl core::marker::Unpin for auto_traits::NotSendNorSync
+impl core::marker::UnsafeUnpin for auto_traits::NotSendNorSync
+impl core::panic::unwind_safe::RefUnwindSafe for auto_traits::NotSendNorSync
+impl core::panic::unwind_safe::UnwindSafe for auto_traits::NotSendNorSync
+impl<T, U> core::convert::Into<U> for auto_traits::NotSendNorSync where U: core::convert::From<T>
+pub fn auto_traits::NotSendNorSync::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for auto_traits::NotSendNorSync where U: core::convert::From<T>]
+impl<T, U> core::convert::TryFrom<U> for auto_traits::NotSendNorSync where U: core::convert::Into<T>
+pub type auto_traits::NotSendNorSync::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for auto_traits::NotSendNorSync where U: core::convert::Into<T>]
+pub fn auto_traits::NotSendNorSync::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for auto_traits::NotSendNorSync where U: core::convert::Into<T>]
+impl<T, U> core::convert::TryInto<U> for auto_traits::NotSendNorSync where U: core::convert::TryFrom<T>
+pub type auto_traits::NotSendNorSync::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for auto_traits::NotSendNorSync where U: core::convert::TryFrom<T>]
+pub fn auto_traits::NotSendNorSync::try_into(self) -> core::result::Result<U, <U as core::convert::TryFrom<T>>::Error> [impl: impl<T, U> core::convert::TryInto<U> for auto_traits::NotSendNorSync where U: core::convert::TryFrom<T>]
+impl<T> core::any::Any for auto_traits::NotSendNorSync where T: 'static + ?core::marker::Sized
+pub fn auto_traits::NotSendNorSync::type_id(&self) -> core::any::TypeId [impl: impl<T> core::any::Any for auto_traits::NotSendNorSync where T: 'static + ?core::marker::Sized]
+impl<T> core::borrow::Borrow<T> for auto_traits::NotSendNorSync where T: ?core::marker::Sized
+pub fn auto_traits::NotSendNorSync::borrow(&self) -> &T [impl: impl<T> core::borrow::Borrow<T> for auto_traits::NotSendNorSync where T: ?core::marker::Sized]
+impl<T> core::borrow::BorrowMut<T> for auto_traits::NotSendNorSync where T: ?core::marker::Sized
+pub fn auto_traits::NotSendNorSync::borrow_mut(&mut self) -> &mut T [impl: impl<T> core::borrow::BorrowMut<T> for auto_traits::NotSendNorSync where T: ?core::marker::Sized]
+impl<T> core::convert::From<T> for auto_traits::NotSendNorSync
+pub fn auto_traits::NotSendNorSync::from(T) -> T [impl: impl<T> core::convert::From<T> for auto_traits::NotSendNorSync]
+pub struct auto_traits::SendAndSync
+impl core::marker::Freeze for auto_traits::SendAndSync
+impl core::marker::Send for auto_traits::SendAndSync
+impl core::marker::Sync for auto_traits::SendAndSync
+impl core::marker::Unpin for auto_traits::SendAndSync
+impl core::marker::UnsafeUnpin for auto_traits::SendAndSync
+impl core::panic::unwind_safe::RefUnwindSafe for auto_traits::SendAndSync
+impl core::panic::unwind_safe::UnwindSafe for auto_traits::SendAndSync
+impl<T, U> core::convert::Into<U> for auto_traits::SendAndSync where U: core::convert::From<T>
+pub fn auto_traits::SendAndSync::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for auto_traits::SendAndSync where U: core::convert::From<T>]
+impl<T, U> core::convert::TryFrom<U> for auto_traits::SendAndSync where U: core::convert::Into<T>
+pub type auto_traits::SendAndSync::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for auto_traits::SendAndSync where U: core::convert::Into<T>]
+pub fn auto_traits::SendAndSync::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for auto_traits::SendAndSync where U: core::convert::Into<T>]
+impl<T, U> core::convert::TryInto<U> for auto_traits::SendAndSync where U: core::convert::TryFrom<T>
+pub type auto_traits::SendAndSync::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for auto_traits::SendAndSync where U: core::convert::TryFrom<T>]
+pub fn auto_traits::SendAndSync::try_into(self) -> core::result::Result<U, <U as core::convert::TryFrom<T>>::Error> [impl: impl<T, U> core::convert::TryInto<U> for auto_traits::SendAndSync where U: core::convert::TryFrom<T>]
+impl<T> core::any::Any for auto_traits::SendAndSync where T: 'static + ?core::marker::Sized
+pub fn auto_traits::SendAndSync::type_id(&self) -> core::any::TypeId [impl: impl<T> core::any::Any for auto_traits::SendAndSync where T: 'static + ?core::marker::Sized]
+impl<T> core::borrow::Borrow<T> for auto_traits::SendAndSync where T: ?core::marker::Sized
+pub fn auto_traits::SendAndSync::borrow(&self) -> &T [impl: impl<T> core::borrow::Borrow<T> for auto_traits::SendAndSync where T: ?core::marker::Sized]
+impl<T> core::borrow::BorrowMut<T> for auto_traits::SendAndSync where T: ?core::marker::Sized
+pub fn auto_traits::SendAndSync::borrow_mut(&mut self) -> &mut T [impl: impl<T> core::borrow::BorrowMut<T> for auto_traits::SendAndSync where T: ?core::marker::Sized]
+impl<T> core::convert::From<T> for auto_traits::SendAndSync
+pub fn auto_traits::SendAndSync::from(T) -> T [impl: impl<T> core::convert::From<T> for auto_traits::SendAndSync]
+pub struct auto_traits::SendNotSync
+impl !core::marker::Freeze for auto_traits::SendNotSync
+impl core::marker::Send for auto_traits::SendNotSync
+impl !core::marker::Sync for auto_traits::SendNotSync
+impl core::marker::Unpin for auto_traits::SendNotSync
+impl core::marker::UnsafeUnpin for auto_traits::SendNotSync
+impl !core::panic::unwind_safe::RefUnwindSafe for auto_traits::SendNotSync
+impl core::panic::unwind_safe::UnwindSafe for auto_traits::SendNotSync
+impl<T, U> core::convert::Into<U> for auto_traits::SendNotSync where U: core::convert::From<T>
+pub fn auto_traits::SendNotSync::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for auto_traits::SendNotSync where U: core::convert::From<T>]
+impl<T, U> core::convert::TryFrom<U> for auto_traits::SendNotSync where U: core::convert::Into<T>
+pub type auto_traits::SendNotSync::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for auto_traits::SendNotSync where U: core::convert::Into<T>]
+pub fn auto_traits::SendNotSync::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for auto_traits::SendNotSync where U: core::convert::Into<T>]
+impl<T, U> core::convert::TryInto<U> for auto_traits::SendNotSync where U: core::convert::TryFrom<T>
+pub type auto_traits::SendNotSync::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for auto_traits::SendNotSync where U: core::convert::TryFrom<T>]
+pub fn auto_traits::SendNotSync::try_into(self) -> core::result::Result<U, <U as core::convert::TryFrom<T>>::Error> [impl: impl<T, U> core::convert::TryInto<U> for auto_traits::SendNotSync where U: core::convert::TryFrom<T>]
+impl<T> core::any::Any for auto_traits::SendNotSync where T: 'static + ?core::marker::Sized
+pub fn auto_traits::SendNotSync::type_id(&self) -> core::any::TypeId [impl: impl<T> core::any::Any for auto_traits::SendNotSync where T: 'static + ?core::marker::Sized]
+impl<T> core::borrow::Borrow<T> for auto_traits::SendNotSync where T: ?core::marker::Sized
+pub fn auto_traits::SendNotSync::borrow(&self) -> &T [impl: impl<T> core::borrow::Borrow<T> for auto_traits::SendNotSync where T: ?core::marker::Sized]
+impl<T> core::borrow::BorrowMut<T> for auto_traits::SendNotSync where T: ?core::marker::Sized
+pub fn auto_traits::SendNotSync::borrow_mut(&mut self) -> &mut T [impl: impl<T> core::borrow::BorrowMut<T> for auto_traits::SendNotSync where T: ?core::marker::Sized]
+impl<T> core::convert::From<T> for auto_traits::SendNotSync
+pub fn auto_traits::SendNotSync::from(T) -> T [impl: impl<T> core::convert::From<T> for auto_traits::SendNotSync]

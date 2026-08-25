@@ -1,0 +1,21 @@
+[package]
+name = "public-api-tricks"
+version = "0.1.0"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+description = "Public API listing and diffing with external re-export (semver trick) resolution"
+repository = "https://github.com/nyonson/public-api-tricks"
+rust-version = "1.85"
+
+[dependencies]
+rustdoc-types = "0.59.0"
+serde_json = { version = "1.0.70", features = ["unbounded_depth"] }
+serde = { version = "1.0.186", features = ["derive"] }
+
+[workspace]
+# Test fixtures are separate crates, not workspace members.
+exclude = ["tests/test-apis"]
+
+[package.metadata]
+rbmt.version = "0.5.3"
+rbmt.toolchains = { nightly = "nightly-2026-07-21", stable = "1.93.1" }

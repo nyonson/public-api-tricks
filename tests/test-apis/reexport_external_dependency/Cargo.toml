@@ -1,0 +1,6 @@
+[package]
+edition = "2021"
+name = "reexport_external_dependency"
+version = "0.1.0"
+description = "Dependency of the reexport_external test crate"
+license = "MIT"

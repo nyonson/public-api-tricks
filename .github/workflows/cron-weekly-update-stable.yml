@@ -1,0 +1,32 @@
+name: Update Stable Toolchain
+on:
+  schedule:
+    - cron: "0 0 * * 5" # runs every Friday at 00:00 (generally rust releases on Thursday)
+  workflow_dispatch: # allows manual triggering
+permissions: {}
+jobs:
+  update-stable:
+    name: Update stable rustc
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          persist-credentials: false
+      - uses: ./.github/actions/setup-rbmt
+      - name: Update stable toolchain in Cargo.toml
+        run: |
+          cargo rbmt toolchains --update-stable
+          echo "stable_version=$(cargo rbmt toolchains --stable)" >> $GITHUB_ENV
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
+        with:
+          author: Update Stable Bot <bot@example.com>
+          committer: Update Stable Bot <bot@example.com>
+          title: Automated weekly update to stable (to ${{ env.stable_version }})
+          body: |
+            Automated update to Cargo.toml
+          commit-message: Automated update to stable ${{ env.stable_version }}
+          branch: create-pull-request/weekly-stable-update

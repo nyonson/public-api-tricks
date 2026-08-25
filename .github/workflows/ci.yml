@@ -1,0 +1,57 @@
+---
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+name: Continuous Integration
+
+permissions: {}
+
+jobs:
+  Test:
+    name: Test - ${{ matrix.dep }} deps
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    strategy:
+      fail-fast: false
+      matrix:
+        dep: [minimal, maximum]
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          persist-credentials: false
+      - uses: ./.github/actions/setup-rbmt
+      - name: "Run tests"
+        run: cargo rbmt test --toolchain nightly --lockfile ${{ matrix.dep }}
+
+  Check:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    strategy:
+      fail-fast: false
+      matrix:
+        task: [lint, "fmt --check", docs]
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          persist-credentials: false
+      - uses: ./.github/actions/setup-rbmt
+      - name: "Run ${{ matrix.task }}"
+        run: cargo rbmt ${{ matrix.task }}
+
+  Prerelease:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          persist-credentials: false
+          fetch-depth: 0 # History required for version bump detection.
+      - uses: ./.github/actions/setup-rbmt
+      - name: "Run pre-release checks"
+        run: cargo rbmt prerelease --baseline ${{ github.event.pull_request.base.sha || github.event.before }}

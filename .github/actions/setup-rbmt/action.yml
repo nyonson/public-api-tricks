@@ -1,0 +1,17 @@
+name: 'Setup RBMT'
+description: 'Install cargo-rbmt and the pinned Rust toolchains.'
+
+runs:
+  using: "composite"
+  steps:
+    - name: "Configure log level"
+      shell: bash
+      run: echo "RBMT_LOG_LEVEL=${{ runner.debug == '1' && 'verbose' || 'quiet' }}" >> "$GITHUB_ENV"
+
+    - name: "Install cargo-rbmt"
+      shell: bash
+      run: cargo install --quiet cargo-rbmt --version "$(grep '^rbmt.version' Cargo.toml | cut -d'"' -f2)"
+
+    - name: "Install Rust toolchains via cargo-rbmt"
+      shell: bash
+      run: cargo rbmt toolchains

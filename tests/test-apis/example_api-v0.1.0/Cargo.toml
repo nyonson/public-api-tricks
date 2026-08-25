@@ -1,0 +1,6 @@
+[package]
+edition = "2021"
+name = "example_api"
+version = "0.1.0"
+description = "Example API used in the cargo-public-api test suite"
+license = "MIT"

@@ -1,0 +1,9 @@
+[package]
+edition = "2021"
+name = "reexport_external"
+version = "0.1.0"
+description = "Test crate that re-exports an external crate"
+license = "MIT"
+
+[dependencies]
+reexport_external_dependency = { path = "../reexport_external_dependency" }
