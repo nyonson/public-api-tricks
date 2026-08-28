@@ -38,6 +38,8 @@ struct BuildDriver {
     lib_name: String,
     /// Directory rustdoc JSON is written to (`<target>/doc`).
     doc_dir: PathBuf,
+    /// Extra environment variables to forward to every cargo child process.
+    extra_env: Vec<(String, String)>,
 }
 
 /// A dependency of the crate under analysis.
@@ -53,8 +55,8 @@ struct DepArtifact {
 }
 
 impl BuildDriver {
-    fn new(manifest_path: &Path, cargo_args: &[&str]) -> Result<Self> {
-        let metadata = Self::cargo_metadata(manifest_path, cargo_args)?;
+    fn new(manifest_path: &Path, cargo_args: &[&str], extra_env: &[(&str, &str)]) -> Result<Self> {
+        let metadata = Self::cargo_metadata(manifest_path, cargo_args, extra_env)?;
         let lib_name = metadata
             .packages
             .iter()
@@ -73,6 +75,10 @@ impl BuildDriver {
             cargo_args: cargo_args.iter().map(|s| s.to_string()).collect(),
             lib_name,
             doc_dir: PathBuf::from(metadata.target_directory).join("doc"),
+            extra_env: extra_env
+                .iter()
+                .map(|(k, v)| (k.to_string(), v.to_string()))
+                .collect(),
         })
     }
 
@@ -124,7 +130,8 @@ impl BuildDriver {
     /// artifacts discovered from the compiler messages.
     fn build_main_json(&self) -> Result<(PathBuf, Vec<DepArtifact>)> {
         let args: Vec<&str> = self.cargo_args.iter().map(|s| s.as_str()).collect();
-        let output = Self::rustdoc_command(&self.manifest_path, &args, true)
+        let output = self
+            .rustdoc_command(&self.manifest_path, &args, true)
             .output()
             .map_err(|e| Error::Cargo(e.to_string()))?;
         if !output.status.success() {
@@ -191,12 +198,11 @@ impl BuildDriver {
             args.push(format!("--features={}", dep.features.join(",")));
         }
         let args: Vec<&str> = args.iter().map(String::as_str).collect();
-        let status = Self::rustdoc_command(&dep.manifest_path, &args, false)
-            // Write the JSON into the main crate's target dir, not the dependency's own (which may
-            // be the read-only cargo registry).
-            .env("CARGO_TARGET_DIR", self.doc_dir.parent().unwrap())
-            .status()
-            .map_err(|e| Error::Cargo(e.to_string()))?;
+        let mut cmd = self.rustdoc_command(&dep.manifest_path, &args, false);
+        // Write the JSON into the main crate's target dir, not the dependency's own (which may
+        // be the read-only cargo registry).
+        cmd.env("CARGO_TARGET_DIR", self.doc_dir.parent().unwrap());
+        let status = cmd.status().map_err(|e| Error::Cargo(e.to_string()))?;
         if !status.success() {
             return Err(Error::Cargo(format!("documenting dependency {}", dep.name)));
         }
@@ -212,20 +218,21 @@ impl BuildDriver {
     /// arguments. Passing `--message-format=json` also produces cargo's artifact messages on stdout
     /// (used for dependency discovery). `RUSTDOCFLAGS` suppresses warnings-only doc errors (e.g.
     /// broken intra-doc links with limited feature sets) so they do not fail the JSON build.
-    fn rustdoc_command(manifest: &Path, cargo_args: &[&str], message_json: bool) -> Command {
+    fn rustdoc_command(&self, manifest: &Path, cargo_args: &[&str], message_json: bool) -> Command {
         let mut cmd = Command::new("cargo");
         cmd.arg("rustdoc")
             .arg("--lib")
             .arg("--manifest-path")
             .arg(manifest);
-        for arg in cargo_args {
-            cmd.arg(arg);
-        }
+        cmd.args(cargo_args);
         if message_json {
             cmd.arg("--message-format=json");
         }
         cmd.args(["--", "-Z", "unstable-options", "--output-format", "json"]);
         cmd.env("RUSTDOCFLAGS", "-A rustdoc::broken_intra_doc_links");
+        for (k, v) in &self.extra_env {
+            cmd.env(k, v);
+        }
         cmd
     }
 
@@ -238,15 +245,20 @@ impl BuildDriver {
     }
 
     /// Run `cargo metadata` for the manifest with the given feature arguments.
-    fn cargo_metadata(manifest_path: &Path, cargo_args: &[&str]) -> Result<Metadata> {
+    fn cargo_metadata(
+        manifest_path: &Path,
+        cargo_args: &[&str],
+        extra_env: &[(&str, &str)],
+    ) -> Result<Metadata> {
         let mut cmd = Command::new("cargo");
         cmd.arg("metadata")
             .arg("--format-version")
             .arg("1")
             .arg("--manifest-path")
             .arg(manifest_path);
-        for arg in cargo_args {
-            cmd.arg(arg);
+        cmd.args(cargo_args);
+        for (k, v) in extra_env {
+            cmd.env(k, v);
         }
         let output = cmd.output().map_err(|e| Error::Cargo(e.to_string()))?;
         if !output.status.success() {
@@ -263,8 +275,20 @@ impl BuildDriver {
 ///
 /// Rustdoc JSON is generated for the crate. If it publicly re-exports items of an external crate
 /// (e.g. the "semver trick"), rustdoc JSON is also generated for that external crate with
-/// exactly the features it is compiled with in this configuration.
+/// exactly the features it is compiled with in this configration.
 pub fn build(manifest_path: &Path, cargo_args: &[&str]) -> Result<PublicApi> {
-    let builder = BuildDriver::new(manifest_path, cargo_args)?;
+    build_with_env(manifest_path, cargo_args, &[])
+}
+
+/// Build the public API of the crate at `manifest_path`, forwarding extra environment variables
+/// to every cargo child process.
+///
+/// This is useful for setting `RUSTUP_TOOLCHAIN` or other build environment variables.
+pub fn build_with_env(
+    manifest_path: &Path,
+    cargo_args: &[&str],
+    extra_env: &[(&str, &str)],
+) -> Result<PublicApi> {
+    let builder = BuildDriver::new(manifest_path, cargo_args, extra_env)?;
     builder.run()
 }

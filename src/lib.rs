@@ -12,7 +12,7 @@ mod public_item;
 mod render;
 mod tokens;
 
-pub use build::build;
+pub use build::{build, build_with_env};
 pub use diff::{ChangedPublicItem, PublicApiDiff};
 pub use error::{Error, Result};
 pub use public_item::PublicItem;
