@@ -33,6 +33,7 @@ lint: (rbmt "lint --lockfile maximum")
 # Test workspace (requires nightly toolchain)
 test: (rbmt "test --lockfile minimal --toolchain nightly")
 
-# Re-bless the API snapshots
+# Re-bless the API snapshots on the most recent nightly
 bless: tools
+  cargo rbmt toolchains --update-nightly
   UPDATE_SNAPSHOTS=1 cargo rbmt run --lockfile minimal --toolchain nightly -- test

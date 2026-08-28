@@ -15,7 +15,7 @@ impl core::panic::unwind_safe::UnwindSafe for comprehensive_api::attributes::Non
 impl<T, U> core::convert::Into<U> for comprehensive_api::attributes::NonExhaustive where U: core::convert::From<T>
 pub fn comprehensive_api::attributes::NonExhaustive::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::attributes::NonExhaustive where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::attributes::NonExhaustive where U: core::convert::Into<T>
-pub type comprehensive_api::attributes::NonExhaustive::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::attributes::NonExhaustive where U: core::convert::Into<T>]
+pub type comprehensive_api::attributes::NonExhaustive::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::attributes::NonExhaustive where U: core::convert::Into<T>]
 pub fn comprehensive_api::attributes::NonExhaustive::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::attributes::NonExhaustive where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::attributes::NonExhaustive where U: core::convert::TryFrom<T>
 pub type comprehensive_api::attributes::NonExhaustive::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::attributes::NonExhaustive where U: core::convert::TryFrom<T>]
@@ -40,7 +40,7 @@ impl core::panic::unwind_safe::UnwindSafe for comprehensive_api::attributes::C
 impl<T, U> core::convert::Into<U> for comprehensive_api::attributes::C where U: core::convert::From<T>
 pub fn comprehensive_api::attributes::C::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::attributes::C where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::attributes::C where U: core::convert::Into<T>
-pub type comprehensive_api::attributes::C::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::attributes::C where U: core::convert::Into<T>]
+pub type comprehensive_api::attributes::C::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::attributes::C where U: core::convert::Into<T>]
 pub fn comprehensive_api::attributes::C::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::attributes::C where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::attributes::C where U: core::convert::TryFrom<T>
 pub type comprehensive_api::attributes::C::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::attributes::C where U: core::convert::TryFrom<T>]
@@ -65,7 +65,7 @@ impl core::panic::unwind_safe::UnwindSafe for comprehensive_api::attributes::Rep
 impl<T, U> core::convert::Into<U> for comprehensive_api::attributes::ReprRust where U: core::convert::From<T>
 pub fn comprehensive_api::attributes::ReprRust::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::attributes::ReprRust where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::attributes::ReprRust where U: core::convert::Into<T>
-pub type comprehensive_api::attributes::ReprRust::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::attributes::ReprRust where U: core::convert::Into<T>]
+pub type comprehensive_api::attributes::ReprRust::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::attributes::ReprRust where U: core::convert::Into<T>]
 pub fn comprehensive_api::attributes::ReprRust::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::attributes::ReprRust where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::attributes::ReprRust where U: core::convert::TryFrom<T>
 pub type comprehensive_api::attributes::ReprRust::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::attributes::ReprRust where U: core::convert::TryFrom<T>]
@@ -110,7 +110,7 @@ impl core::panic::unwind_safe::UnwindSafe for comprehensive_api::enums::DiverseV
 impl<T, U> core::convert::Into<U> for comprehensive_api::enums::DiverseVariants where U: core::convert::From<T>
 pub fn comprehensive_api::enums::DiverseVariants::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::enums::DiverseVariants where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::enums::DiverseVariants where U: core::convert::Into<T>
-pub type comprehensive_api::enums::DiverseVariants::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::enums::DiverseVariants where U: core::convert::Into<T>]
+pub type comprehensive_api::enums::DiverseVariants::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::enums::DiverseVariants where U: core::convert::Into<T>]
 pub fn comprehensive_api::enums::DiverseVariants::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::enums::DiverseVariants where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::enums::DiverseVariants where U: core::convert::TryFrom<T>
 pub type comprehensive_api::enums::DiverseVariants::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::enums::DiverseVariants where U: core::convert::TryFrom<T>]
@@ -137,7 +137,7 @@ impl core::panic::unwind_safe::UnwindSafe for comprehensive_api::enums::EnumWith
 impl<T, U> core::convert::Into<U> for comprehensive_api::enums::EnumWithExplicitDiscriminants where U: core::convert::From<T>
 pub fn comprehensive_api::enums::EnumWithExplicitDiscriminants::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::enums::EnumWithExplicitDiscriminants where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::enums::EnumWithExplicitDiscriminants where U: core::convert::Into<T>
-pub type comprehensive_api::enums::EnumWithExplicitDiscriminants::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::enums::EnumWithExplicitDiscriminants where U: core::convert::Into<T>]
+pub type comprehensive_api::enums::EnumWithExplicitDiscriminants::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::enums::EnumWithExplicitDiscriminants where U: core::convert::Into<T>]
 pub fn comprehensive_api::enums::EnumWithExplicitDiscriminants::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::enums::EnumWithExplicitDiscriminants where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::enums::EnumWithExplicitDiscriminants where U: core::convert::TryFrom<T>
 pub type comprehensive_api::enums::EnumWithExplicitDiscriminants::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::enums::EnumWithExplicitDiscriminants where U: core::convert::TryFrom<T>]
@@ -154,17 +154,17 @@ pub enum comprehensive_api::enums::EnumWithGenerics<'a, T, D: core::fmt::Debug> 
 pub comprehensive_api::enums::EnumWithGenerics::Variant
 pub comprehensive_api::enums::EnumWithGenerics::Variant::d: D
 pub comprehensive_api::enums::EnumWithGenerics::Variant::t: &'a T
-impl<'a, T, D> core::marker::Freeze for comprehensive_api::enums::EnumWithGenerics<'a, T, D> where D: core::marker::Freeze
-impl<'a, T, D> core::marker::Send for comprehensive_api::enums::EnumWithGenerics<'a, T, D> where D: core::marker::Send, T: core::marker::Sync
-impl<'a, T, D> core::marker::Sync for comprehensive_api::enums::EnumWithGenerics<'a, T, D> where D: core::marker::Sync, T: core::marker::Sync
-impl<'a, T, D> core::marker::Unpin for comprehensive_api::enums::EnumWithGenerics<'a, T, D> where D: core::marker::Unpin
-impl<'a, T, D> core::marker::UnsafeUnpin for comprehensive_api::enums::EnumWithGenerics<'a, T, D> where D: core::marker::UnsafeUnpin
-impl<'a, T, D> core::panic::unwind_safe::RefUnwindSafe for comprehensive_api::enums::EnumWithGenerics<'a, T, D> where D: core::panic::unwind_safe::RefUnwindSafe, T: core::panic::unwind_safe::RefUnwindSafe
-impl<'a, T, D> core::panic::unwind_safe::UnwindSafe for comprehensive_api::enums::EnumWithGenerics<'a, T, D> where D: core::panic::unwind_safe::UnwindSafe, T: core::panic::unwind_safe::RefUnwindSafe
+impl<'a, T, D> core::marker::Freeze for comprehensive_api::enums::EnumWithGenerics<'a, T, D> where &'a T: core::marker::Freeze, D: core::marker::Freeze
+impl<'a, T, D> core::marker::Send for comprehensive_api::enums::EnumWithGenerics<'a, T, D> where &'a T: core::marker::Send, D: core::marker::Send
+impl<'a, T, D> core::marker::Sync for comprehensive_api::enums::EnumWithGenerics<'a, T, D> where &'a T: core::marker::Sync, D: core::marker::Sync
+impl<'a, T, D> core::marker::Unpin for comprehensive_api::enums::EnumWithGenerics<'a, T, D> where &'a T: core::marker::Unpin, D: core::marker::Unpin
+impl<'a, T, D> core::marker::UnsafeUnpin for comprehensive_api::enums::EnumWithGenerics<'a, T, D> where &'a T: core::marker::UnsafeUnpin, D: core::marker::UnsafeUnpin
+impl<'a, T, D> core::panic::unwind_safe::RefUnwindSafe for comprehensive_api::enums::EnumWithGenerics<'a, T, D> where &'a T: core::panic::unwind_safe::RefUnwindSafe, D: core::panic::unwind_safe::RefUnwindSafe
+impl<'a, T, D> core::panic::unwind_safe::UnwindSafe for comprehensive_api::enums::EnumWithGenerics<'a, T, D> where &'a T: core::panic::unwind_safe::UnwindSafe, D: core::panic::unwind_safe::UnwindSafe
 impl<T, U> core::convert::Into<U> for comprehensive_api::enums::EnumWithGenerics<'a, T, D> where U: core::convert::From<T>
 pub fn comprehensive_api::enums::EnumWithGenerics<'a, T, D>::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::enums::EnumWithGenerics<'a, T, D> where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::enums::EnumWithGenerics<'a, T, D> where U: core::convert::Into<T>
-pub type comprehensive_api::enums::EnumWithGenerics<'a, T, D>::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::enums::EnumWithGenerics<'a, T, D> where U: core::convert::Into<T>]
+pub type comprehensive_api::enums::EnumWithGenerics<'a, T, D>::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::enums::EnumWithGenerics<'a, T, D> where U: core::convert::Into<T>]
 pub fn comprehensive_api::enums::EnumWithGenerics<'a, T, D>::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::enums::EnumWithGenerics<'a, T, D> where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::enums::EnumWithGenerics<'a, T, D> where U: core::convert::TryFrom<T>
 pub type comprehensive_api::enums::EnumWithGenerics<'a, T, D>::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::enums::EnumWithGenerics<'a, T, D> where U: core::convert::TryFrom<T>]
@@ -193,7 +193,7 @@ impl core::panic::unwind_safe::UnwindSafe for comprehensive_api::enums::EnumWith
 impl<T, U> core::convert::Into<U> for comprehensive_api::enums::EnumWithStrippedTupleVariants where U: core::convert::From<T>
 pub fn comprehensive_api::enums::EnumWithStrippedTupleVariants::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::enums::EnumWithStrippedTupleVariants where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::enums::EnumWithStrippedTupleVariants where U: core::convert::Into<T>
-pub type comprehensive_api::enums::EnumWithStrippedTupleVariants::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::enums::EnumWithStrippedTupleVariants where U: core::convert::Into<T>]
+pub type comprehensive_api::enums::EnumWithStrippedTupleVariants::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::enums::EnumWithStrippedTupleVariants where U: core::convert::Into<T>]
 pub fn comprehensive_api::enums::EnumWithStrippedTupleVariants::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::enums::EnumWithStrippedTupleVariants where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::enums::EnumWithStrippedTupleVariants where U: core::convert::TryFrom<T>
 pub type comprehensive_api::enums::EnumWithStrippedTupleVariants::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::enums::EnumWithStrippedTupleVariants where U: core::convert::TryFrom<T>]
@@ -218,7 +218,7 @@ impl core::panic::unwind_safe::UnwindSafe for comprehensive_api::enums::SingleVa
 impl<T, U> core::convert::Into<U> for comprehensive_api::enums::SingleVariant where U: core::convert::From<T>
 pub fn comprehensive_api::enums::SingleVariant::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::enums::SingleVariant where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::enums::SingleVariant where U: core::convert::Into<T>
-pub type comprehensive_api::enums::SingleVariant::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::enums::SingleVariant where U: core::convert::Into<T>]
+pub type comprehensive_api::enums::SingleVariant::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::enums::SingleVariant where U: core::convert::Into<T>]
 pub fn comprehensive_api::enums::SingleVariant::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::enums::SingleVariant where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::enums::SingleVariant where U: core::convert::TryFrom<T>
 pub type comprehensive_api::enums::SingleVariant::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::enums::SingleVariant where U: core::convert::TryFrom<T>]
@@ -243,7 +243,7 @@ impl core::panic::unwind_safe::UnwindSafe for comprehensive_api::enums::SingleVa
 impl<T, U> core::convert::Into<U> for comprehensive_api::enums::SingleVariantReprC where U: core::convert::From<T>
 pub fn comprehensive_api::enums::SingleVariantReprC::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::enums::SingleVariantReprC where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::enums::SingleVariantReprC where U: core::convert::Into<T>
-pub type comprehensive_api::enums::SingleVariantReprC::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::enums::SingleVariantReprC where U: core::convert::Into<T>]
+pub type comprehensive_api::enums::SingleVariantReprC::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::enums::SingleVariantReprC where U: core::convert::Into<T>]
 pub fn comprehensive_api::enums::SingleVariantReprC::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::enums::SingleVariantReprC where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::enums::SingleVariantReprC where U: core::convert::TryFrom<T>
 pub type comprehensive_api::enums::SingleVariantReprC::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::enums::SingleVariantReprC where U: core::convert::TryFrom<T>]
@@ -270,7 +270,7 @@ impl core::panic::unwind_safe::UnwindSafe for comprehensive_api::exports::issue_
 impl<T, U> core::convert::Into<U> for comprehensive_api::exports::issue_145::external::External where U: core::convert::From<T>
 pub fn comprehensive_api::exports::issue_145::external::External::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::exports::issue_145::external::External where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::exports::issue_145::external::External where U: core::convert::Into<T>
-pub type comprehensive_api::exports::issue_145::external::External::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::exports::issue_145::external::External where U: core::convert::Into<T>]
+pub type comprehensive_api::exports::issue_145::external::External::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::exports::issue_145::external::External where U: core::convert::Into<T>]
 pub fn comprehensive_api::exports::issue_145::external::External::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::exports::issue_145::external::External where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::exports::issue_145::external::External where U: core::convert::TryFrom<T>
 pub type comprehensive_api::exports::issue_145::external::External::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::exports::issue_145::external::External where U: core::convert::TryFrom<T>]
@@ -295,7 +295,7 @@ impl core::panic::unwind_safe::UnwindSafe for comprehensive_api::exports::issue_
 impl<T, U> core::convert::Into<U> for comprehensive_api::exports::issue_145::external_2::External where U: core::convert::From<T>
 pub fn comprehensive_api::exports::issue_145::external_2::External::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::exports::issue_145::external_2::External where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::exports::issue_145::external_2::External where U: core::convert::Into<T>
-pub type comprehensive_api::exports::issue_145::external_2::External::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::exports::issue_145::external_2::External where U: core::convert::Into<T>]
+pub type comprehensive_api::exports::issue_145::external_2::External::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::exports::issue_145::external_2::External where U: core::convert::Into<T>]
 pub fn comprehensive_api::exports::issue_145::external_2::External::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::exports::issue_145::external_2::External where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::exports::issue_145::external_2::External where U: core::convert::TryFrom<T>
 pub type comprehensive_api::exports::issue_145::external_2::External::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::exports::issue_145::external_2::External where U: core::convert::TryFrom<T>]
@@ -320,7 +320,7 @@ impl core::panic::unwind_safe::UnwindSafe for comprehensive_api::exports::issue_
 impl<T, U> core::convert::Into<U> for comprehensive_api::exports::issue_145::external_3::External where U: core::convert::From<T>
 pub fn comprehensive_api::exports::issue_145::external_3::External::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::exports::issue_145::external_3::External where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::exports::issue_145::external_3::External where U: core::convert::Into<T>
-pub type comprehensive_api::exports::issue_145::external_3::External::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::exports::issue_145::external_3::External where U: core::convert::Into<T>]
+pub type comprehensive_api::exports::issue_145::external_3::External::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::exports::issue_145::external_3::External where U: core::convert::Into<T>]
 pub fn comprehensive_api::exports::issue_145::external_3::External::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::exports::issue_145::external_3::External where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::exports::issue_145::external_3::External where U: core::convert::TryFrom<T>
 pub type comprehensive_api::exports::issue_145::external_3::External::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::exports::issue_145::external_3::External where U: core::convert::TryFrom<T>]
@@ -345,7 +345,7 @@ impl core::panic::unwind_safe::UnwindSafe for comprehensive_api::exports::issue_
 impl<T, U> core::convert::Into<U> for comprehensive_api::exports::issue_145::external_2::External where U: core::convert::From<T>
 pub fn comprehensive_api::exports::issue_145::external_2::External::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::exports::issue_145::external_2::External where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::exports::issue_145::external_2::External where U: core::convert::Into<T>
-pub type comprehensive_api::exports::issue_145::external_2::External::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::exports::issue_145::external_2::External where U: core::convert::Into<T>]
+pub type comprehensive_api::exports::issue_145::external_2::External::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::exports::issue_145::external_2::External where U: core::convert::Into<T>]
 pub fn comprehensive_api::exports::issue_145::external_2::External::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::exports::issue_145::external_2::External where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::exports::issue_145::external_2::External where U: core::convert::TryFrom<T>
 pub type comprehensive_api::exports::issue_145::external_2::External::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::exports::issue_145::external_2::External where U: core::convert::TryFrom<T>]
@@ -369,7 +369,7 @@ impl core::panic::unwind_safe::UnwindSafe for comprehensive_api::exports::issue_
 impl<T, U> core::convert::Into<U> for comprehensive_api::exports::issue_145::external_3::External where U: core::convert::From<T>
 pub fn comprehensive_api::exports::issue_145::external_3::External::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::exports::issue_145::external_3::External where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::exports::issue_145::external_3::External where U: core::convert::Into<T>
-pub type comprehensive_api::exports::issue_145::external_3::External::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::exports::issue_145::external_3::External where U: core::convert::Into<T>]
+pub type comprehensive_api::exports::issue_145::external_3::External::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::exports::issue_145::external_3::External where U: core::convert::Into<T>]
 pub fn comprehensive_api::exports::issue_145::external_3::External::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::exports::issue_145::external_3::External where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::exports::issue_145::external_3::External where U: core::convert::TryFrom<T>
 pub type comprehensive_api::exports::issue_145::external_3::External::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::exports::issue_145::external_3::External where U: core::convert::TryFrom<T>]
@@ -456,7 +456,7 @@ impl<'a> !core::panic::unwind_safe::UnwindSafe for comprehensive_api::higher_ran
 impl<T, U> core::convert::Into<U> for comprehensive_api::higher_ranked_trait_bounds::Bar<'a> where U: core::convert::From<T>
 pub fn comprehensive_api::higher_ranked_trait_bounds::Bar<'a>::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::higher_ranked_trait_bounds::Bar<'a> where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::higher_ranked_trait_bounds::Bar<'a> where U: core::convert::Into<T>
-pub type comprehensive_api::higher_ranked_trait_bounds::Bar<'a>::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::higher_ranked_trait_bounds::Bar<'a> where U: core::convert::Into<T>]
+pub type comprehensive_api::higher_ranked_trait_bounds::Bar<'a>::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::higher_ranked_trait_bounds::Bar<'a> where U: core::convert::Into<T>]
 pub fn comprehensive_api::higher_ranked_trait_bounds::Bar<'a>::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::higher_ranked_trait_bounds::Bar<'a> where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::higher_ranked_trait_bounds::Bar<'a> where U: core::convert::TryFrom<T>
 pub type comprehensive_api::higher_ranked_trait_bounds::Bar<'a>::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::higher_ranked_trait_bounds::Bar<'a> where U: core::convert::TryFrom<T>]
@@ -484,7 +484,7 @@ impl<'a> !core::panic::unwind_safe::UnwindSafe for comprehensive_api::higher_ran
 impl<T, U> core::convert::Into<U> for comprehensive_api::higher_ranked_trait_bounds::Foo<'a> where U: core::convert::From<T>
 pub fn comprehensive_api::higher_ranked_trait_bounds::Foo<'a>::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::higher_ranked_trait_bounds::Foo<'a> where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::higher_ranked_trait_bounds::Foo<'a> where U: core::convert::Into<T>
-pub type comprehensive_api::higher_ranked_trait_bounds::Foo<'a>::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::higher_ranked_trait_bounds::Foo<'a> where U: core::convert::Into<T>]
+pub type comprehensive_api::higher_ranked_trait_bounds::Foo<'a>::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::higher_ranked_trait_bounds::Foo<'a> where U: core::convert::Into<T>]
 pub fn comprehensive_api::higher_ranked_trait_bounds::Foo<'a>::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::higher_ranked_trait_bounds::Foo<'a> where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::higher_ranked_trait_bounds::Foo<'a> where U: core::convert::TryFrom<T>
 pub type comprehensive_api::higher_ranked_trait_bounds::Foo<'a>::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::higher_ranked_trait_bounds::Foo<'a> where U: core::convert::TryFrom<T>]
@@ -518,7 +518,7 @@ impl<T> core::panic::unwind_safe::UnwindSafe for comprehensive_api::impls::issue
 impl<T, U> core::convert::Into<U> for comprehensive_api::impls::issue_429::Handle<T> where U: core::convert::From<T>
 pub fn comprehensive_api::impls::issue_429::Handle<T>::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::impls::issue_429::Handle<T> where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::impls::issue_429::Handle<T> where U: core::convert::Into<T>
-pub type comprehensive_api::impls::issue_429::Handle<T>::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::impls::issue_429::Handle<T> where U: core::convert::Into<T>]
+pub type comprehensive_api::impls::issue_429::Handle<T>::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::impls::issue_429::Handle<T> where U: core::convert::Into<T>]
 pub fn comprehensive_api::impls::issue_429::Handle<T>::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::impls::issue_429::Handle<T> where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::impls::issue_429::Handle<T> where U: core::convert::TryFrom<T>
 pub type comprehensive_api::impls::issue_429::Handle<T>::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::impls::issue_429::Handle<T> where U: core::convert::TryFrom<T>]
@@ -535,17 +535,17 @@ pub type comprehensive_api::impls::issue_429::HU32 = comprehensive_api::impls::i
 pub struct comprehensive_api::impls::GatTestStruct1<'a, T>(_)
 impl<'a, T> comprehensive_api::traits::Simple for comprehensive_api::impls::GatTestStruct1<'a, T>
 pub fn comprehensive_api::impls::GatTestStruct1<'a, T>::act() [impl: impl<'a, T> comprehensive_api::traits::Simple for comprehensive_api::impls::GatTestStruct1<'a, T>]
-impl<'a, T> core::marker::Freeze for comprehensive_api::impls::GatTestStruct1<'a, T>
-impl<'a, T> core::marker::Send for comprehensive_api::impls::GatTestStruct1<'a, T> where T: core::marker::Sync
-impl<'a, T> core::marker::Sync for comprehensive_api::impls::GatTestStruct1<'a, T> where T: core::marker::Sync
-impl<'a, T> core::marker::Unpin for comprehensive_api::impls::GatTestStruct1<'a, T>
-impl<'a, T> core::marker::UnsafeUnpin for comprehensive_api::impls::GatTestStruct1<'a, T>
-impl<'a, T> core::panic::unwind_safe::RefUnwindSafe for comprehensive_api::impls::GatTestStruct1<'a, T> where T: core::panic::unwind_safe::RefUnwindSafe
-impl<'a, T> core::panic::unwind_safe::UnwindSafe for comprehensive_api::impls::GatTestStruct1<'a, T> where T: core::panic::unwind_safe::RefUnwindSafe
+impl<'a, T> core::marker::Freeze for comprehensive_api::impls::GatTestStruct1<'a, T> where &'a T: core::marker::Freeze
+impl<'a, T> core::marker::Send for comprehensive_api::impls::GatTestStruct1<'a, T> where &'a T: core::marker::Send
+impl<'a, T> core::marker::Sync for comprehensive_api::impls::GatTestStruct1<'a, T> where &'a T: core::marker::Sync
+impl<'a, T> core::marker::Unpin for comprehensive_api::impls::GatTestStruct1<'a, T> where &'a T: core::marker::Unpin
+impl<'a, T> core::marker::UnsafeUnpin for comprehensive_api::impls::GatTestStruct1<'a, T> where &'a T: core::marker::UnsafeUnpin
+impl<'a, T> core::panic::unwind_safe::RefUnwindSafe for comprehensive_api::impls::GatTestStruct1<'a, T> where &'a T: core::panic::unwind_safe::RefUnwindSafe
+impl<'a, T> core::panic::unwind_safe::UnwindSafe for comprehensive_api::impls::GatTestStruct1<'a, T> where &'a T: core::panic::unwind_safe::UnwindSafe
 impl<T, U> core::convert::Into<U> for comprehensive_api::impls::GatTestStruct1<'a, T> where U: core::convert::From<T>
 pub fn comprehensive_api::impls::GatTestStruct1<'a, T>::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::impls::GatTestStruct1<'a, T> where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::impls::GatTestStruct1<'a, T> where U: core::convert::Into<T>
-pub type comprehensive_api::impls::GatTestStruct1<'a, T>::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::impls::GatTestStruct1<'a, T> where U: core::convert::Into<T>]
+pub type comprehensive_api::impls::GatTestStruct1<'a, T>::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::impls::GatTestStruct1<'a, T> where U: core::convert::Into<T>]
 pub fn comprehensive_api::impls::GatTestStruct1<'a, T>::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::impls::GatTestStruct1<'a, T> where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::impls::GatTestStruct1<'a, T> where U: core::convert::TryFrom<T>
 pub type comprehensive_api::impls::GatTestStruct1<'a, T>::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::impls::GatTestStruct1<'a, T> where U: core::convert::TryFrom<T>]
@@ -569,7 +569,7 @@ impl<T> core::panic::unwind_safe::UnwindSafe for comprehensive_api::impls::GatTe
 impl<T, U> core::convert::Into<U> for comprehensive_api::impls::GatTestStruct2<T> where U: core::convert::From<T>
 pub fn comprehensive_api::impls::GatTestStruct2<T>::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::impls::GatTestStruct2<T> where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::impls::GatTestStruct2<T> where U: core::convert::Into<T>
-pub type comprehensive_api::impls::GatTestStruct2<T>::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::impls::GatTestStruct2<T> where U: core::convert::Into<T>]
+pub type comprehensive_api::impls::GatTestStruct2<T>::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::impls::GatTestStruct2<T> where U: core::convert::Into<T>]
 pub fn comprehensive_api::impls::GatTestStruct2<T>::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::impls::GatTestStruct2<T> where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::impls::GatTestStruct2<T> where U: core::convert::TryFrom<T>
 pub type comprehensive_api::impls::GatTestStruct2<T>::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::impls::GatTestStruct2<T> where U: core::convert::TryFrom<T>]
@@ -597,7 +597,7 @@ impl core::panic::unwind_safe::UnwindSafe for comprehensive_api::impls::Override
 impl<T, U> core::convert::Into<U> for comprehensive_api::impls::OverridesOnlyRequired where U: core::convert::From<T>
 pub fn comprehensive_api::impls::OverridesOnlyRequired::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::impls::OverridesOnlyRequired where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::impls::OverridesOnlyRequired where U: core::convert::Into<T>
-pub type comprehensive_api::impls::OverridesOnlyRequired::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::impls::OverridesOnlyRequired where U: core::convert::Into<T>]
+pub type comprehensive_api::impls::OverridesOnlyRequired::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::impls::OverridesOnlyRequired where U: core::convert::Into<T>]
 pub fn comprehensive_api::impls::OverridesOnlyRequired::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::impls::OverridesOnlyRequired where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::impls::OverridesOnlyRequired where U: core::convert::TryFrom<T>
 pub type comprehensive_api::impls::OverridesOnlyRequired::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::impls::OverridesOnlyRequired where U: core::convert::TryFrom<T>]
@@ -625,7 +625,7 @@ impl core::panic::unwind_safe::UnwindSafe for comprehensive_api::impls::Override
 impl<T, U> core::convert::Into<U> for comprehensive_api::impls::OverridesRequiredAndBothDefaults where U: core::convert::From<T>
 pub fn comprehensive_api::impls::OverridesRequiredAndBothDefaults::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::impls::OverridesRequiredAndBothDefaults where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::impls::OverridesRequiredAndBothDefaults where U: core::convert::Into<T>
-pub type comprehensive_api::impls::OverridesRequiredAndBothDefaults::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::impls::OverridesRequiredAndBothDefaults where U: core::convert::Into<T>]
+pub type comprehensive_api::impls::OverridesRequiredAndBothDefaults::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::impls::OverridesRequiredAndBothDefaults where U: core::convert::Into<T>]
 pub fn comprehensive_api::impls::OverridesRequiredAndBothDefaults::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::impls::OverridesRequiredAndBothDefaults where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::impls::OverridesRequiredAndBothDefaults where U: core::convert::TryFrom<T>
 pub type comprehensive_api::impls::OverridesRequiredAndBothDefaults::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::impls::OverridesRequiredAndBothDefaults where U: core::convert::TryFrom<T>]
@@ -653,7 +653,7 @@ impl core::panic::unwind_safe::UnwindSafe for comprehensive_api::impls::Override
 impl<T, U> core::convert::Into<U> for comprehensive_api::impls::OverridesRequiredAndOneOfTwoDefaults where U: core::convert::From<T>
 pub fn comprehensive_api::impls::OverridesRequiredAndOneOfTwoDefaults::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::impls::OverridesRequiredAndOneOfTwoDefaults where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::impls::OverridesRequiredAndOneOfTwoDefaults where U: core::convert::Into<T>
-pub type comprehensive_api::impls::OverridesRequiredAndOneOfTwoDefaults::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::impls::OverridesRequiredAndOneOfTwoDefaults where U: core::convert::Into<T>]
+pub type comprehensive_api::impls::OverridesRequiredAndOneOfTwoDefaults::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::impls::OverridesRequiredAndOneOfTwoDefaults where U: core::convert::Into<T>]
 pub fn comprehensive_api::impls::OverridesRequiredAndOneOfTwoDefaults::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::impls::OverridesRequiredAndOneOfTwoDefaults where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::impls::OverridesRequiredAndOneOfTwoDefaults where U: core::convert::TryFrom<T>
 pub type comprehensive_api::impls::OverridesRequiredAndOneOfTwoDefaults::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::impls::OverridesRequiredAndOneOfTwoDefaults where U: core::convert::TryFrom<T>]
@@ -684,7 +684,7 @@ impl core::panic::unwind_safe::UnwindSafe for comprehensive_api::impls::TestItem
 impl<T, U> core::convert::Into<U> for comprehensive_api::impls::TestItemGrouping where U: core::convert::From<T>
 pub fn comprehensive_api::impls::TestItemGrouping::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::impls::TestItemGrouping where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::impls::TestItemGrouping where U: core::convert::Into<T>
-pub type comprehensive_api::impls::TestItemGrouping::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::impls::TestItemGrouping where U: core::convert::Into<T>]
+pub type comprehensive_api::impls::TestItemGrouping::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::impls::TestItemGrouping where U: core::convert::Into<T>]
 pub fn comprehensive_api::impls::TestItemGrouping::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::impls::TestItemGrouping where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::impls::TestItemGrouping where U: core::convert::TryFrom<T>
 pub type comprehensive_api::impls::TestItemGrouping::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::impls::TestItemGrouping where U: core::convert::TryFrom<T>]
@@ -709,17 +709,17 @@ pub mut static comprehensive_api::statics::MUT_ANSWER: i8
 pub mod comprehensive_api::structs
 pub struct comprehensive_api::structs::ConstArg<T, const N: usize>
 pub comprehensive_api::structs::ConstArg::items: [T; N]
-impl<T, const N: usize> core::marker::Freeze for comprehensive_api::structs::ConstArg<T, N> where T: core::marker::Freeze
-impl<T, const N: usize> core::marker::Send for comprehensive_api::structs::ConstArg<T, N> where T: core::marker::Send
-impl<T, const N: usize> core::marker::Sync for comprehensive_api::structs::ConstArg<T, N> where T: core::marker::Sync
-impl<T, const N: usize> core::marker::Unpin for comprehensive_api::structs::ConstArg<T, N> where T: core::marker::Unpin
-impl<T, const N: usize> core::marker::UnsafeUnpin for comprehensive_api::structs::ConstArg<T, N> where T: core::marker::UnsafeUnpin
-impl<T, const N: usize> core::panic::unwind_safe::RefUnwindSafe for comprehensive_api::structs::ConstArg<T, N> where T: core::panic::unwind_safe::RefUnwindSafe
-impl<T, const N: usize> core::panic::unwind_safe::UnwindSafe for comprehensive_api::structs::ConstArg<T, N> where T: core::panic::unwind_safe::UnwindSafe
+impl<T, const N: usize> core::marker::Freeze for comprehensive_api::structs::ConstArg<T, N> where [T; N]: core::marker::Freeze
+impl<T, const N: usize> core::marker::Send for comprehensive_api::structs::ConstArg<T, N> where [T; N]: core::marker::Send
+impl<T, const N: usize> core::marker::Sync for comprehensive_api::structs::ConstArg<T, N> where [T; N]: core::marker::Sync
+impl<T, const N: usize> core::marker::Unpin for comprehensive_api::structs::ConstArg<T, N> where [T; N]: core::marker::Unpin
+impl<T, const N: usize> core::marker::UnsafeUnpin for comprehensive_api::structs::ConstArg<T, N> where [T; N]: core::marker::UnsafeUnpin
+impl<T, const N: usize> core::panic::unwind_safe::RefUnwindSafe for comprehensive_api::structs::ConstArg<T, N> where [T; N]: core::panic::unwind_safe::RefUnwindSafe
+impl<T, const N: usize> core::panic::unwind_safe::UnwindSafe for comprehensive_api::structs::ConstArg<T, N> where [T; N]: core::panic::unwind_safe::UnwindSafe
 impl<T, U> core::convert::Into<U> for comprehensive_api::structs::ConstArg<T, N> where U: core::convert::From<T>
 pub fn comprehensive_api::structs::ConstArg<T, N>::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::structs::ConstArg<T, N> where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::ConstArg<T, N> where U: core::convert::Into<T>
-pub type comprehensive_api::structs::ConstArg<T, N>::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::ConstArg<T, N> where U: core::convert::Into<T>]
+pub type comprehensive_api::structs::ConstArg<T, N>::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::ConstArg<T, N> where U: core::convert::Into<T>]
 pub fn comprehensive_api::structs::ConstArg<T, N>::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::ConstArg<T, N> where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::structs::ConstArg<T, N> where U: core::convert::TryFrom<T>
 pub type comprehensive_api::structs::ConstArg<T, N>::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::structs::ConstArg<T, N> where U: core::convert::TryFrom<T>]
@@ -743,7 +743,7 @@ impl<const N: usize> core::panic::unwind_safe::UnwindSafe for comprehensive_api:
 impl<T, U> core::convert::Into<U> for comprehensive_api::structs::OnlyConstArg<N> where U: core::convert::From<T>
 pub fn comprehensive_api::structs::OnlyConstArg<N>::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::structs::OnlyConstArg<N> where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::OnlyConstArg<N> where U: core::convert::Into<T>
-pub type comprehensive_api::structs::OnlyConstArg<N>::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::OnlyConstArg<N> where U: core::convert::Into<T>]
+pub type comprehensive_api::structs::OnlyConstArg<N>::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::OnlyConstArg<N> where U: core::convert::Into<T>]
 pub fn comprehensive_api::structs::OnlyConstArg<N>::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::OnlyConstArg<N> where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::structs::OnlyConstArg<N> where U: core::convert::TryFrom<T>
 pub type comprehensive_api::structs::OnlyConstArg<N>::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::structs::OnlyConstArg<N> where U: core::convert::TryFrom<T>]
@@ -778,7 +778,7 @@ impl core::panic::unwind_safe::UnwindSafe for comprehensive_api::structs::Plain
 impl<T, U> core::convert::Into<U> for comprehensive_api::structs::Plain where U: core::convert::From<T>
 pub fn comprehensive_api::structs::Plain::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::structs::Plain where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::Plain where U: core::convert::Into<T>
-pub type comprehensive_api::structs::Plain::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::Plain where U: core::convert::Into<T>]
+pub type comprehensive_api::structs::Plain::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::Plain where U: core::convert::Into<T>]
 pub fn comprehensive_api::structs::Plain::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::Plain where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::structs::Plain where U: core::convert::TryFrom<T>
 pub type comprehensive_api::structs::Plain::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::structs::Plain where U: core::convert::TryFrom<T>]
@@ -802,7 +802,7 @@ impl core::panic::unwind_safe::UnwindSafe for comprehensive_api::structs::Privat
 impl<T, U> core::convert::Into<U> for comprehensive_api::structs::PrivateField where U: core::convert::From<T>
 pub fn comprehensive_api::structs::PrivateField::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::structs::PrivateField where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::PrivateField where U: core::convert::Into<T>
-pub type comprehensive_api::structs::PrivateField::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::PrivateField where U: core::convert::Into<T>]
+pub type comprehensive_api::structs::PrivateField::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::PrivateField where U: core::convert::Into<T>]
 pub fn comprehensive_api::structs::PrivateField::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::PrivateField where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::structs::PrivateField where U: core::convert::TryFrom<T>
 pub type comprehensive_api::structs::PrivateField::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::structs::PrivateField where U: core::convert::TryFrom<T>]
@@ -826,7 +826,7 @@ impl core::panic::unwind_safe::UnwindSafe for comprehensive_api::structs::TupleS
 impl<T, U> core::convert::Into<U> for comprehensive_api::structs::TupleStructDouble where U: core::convert::From<T>
 pub fn comprehensive_api::structs::TupleStructDouble::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::structs::TupleStructDouble where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::TupleStructDouble where U: core::convert::Into<T>
-pub type comprehensive_api::structs::TupleStructDouble::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::TupleStructDouble where U: core::convert::Into<T>]
+pub type comprehensive_api::structs::TupleStructDouble::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::TupleStructDouble where U: core::convert::Into<T>]
 pub fn comprehensive_api::structs::TupleStructDouble::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::TupleStructDouble where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::structs::TupleStructDouble where U: core::convert::TryFrom<T>
 pub type comprehensive_api::structs::TupleStructDouble::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::structs::TupleStructDouble where U: core::convert::TryFrom<T>]
@@ -850,7 +850,7 @@ impl core::panic::unwind_safe::UnwindSafe for comprehensive_api::structs::TupleS
 impl<T, U> core::convert::Into<U> for comprehensive_api::structs::TupleStructDoubleWithHidden where U: core::convert::From<T>
 pub fn comprehensive_api::structs::TupleStructDoubleWithHidden::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::structs::TupleStructDoubleWithHidden where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::TupleStructDoubleWithHidden where U: core::convert::Into<T>
-pub type comprehensive_api::structs::TupleStructDoubleWithHidden::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::TupleStructDoubleWithHidden where U: core::convert::Into<T>]
+pub type comprehensive_api::structs::TupleStructDoubleWithHidden::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::TupleStructDoubleWithHidden where U: core::convert::Into<T>]
 pub fn comprehensive_api::structs::TupleStructDoubleWithHidden::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::TupleStructDoubleWithHidden where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::structs::TupleStructDoubleWithHidden where U: core::convert::TryFrom<T>
 pub type comprehensive_api::structs::TupleStructDoubleWithHidden::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::structs::TupleStructDoubleWithHidden where U: core::convert::TryFrom<T>]
@@ -874,7 +874,7 @@ impl core::panic::unwind_safe::UnwindSafe for comprehensive_api::structs::TupleS
 impl<T, U> core::convert::Into<U> for comprehensive_api::structs::TupleStructDoubleWithPrivate where U: core::convert::From<T>
 pub fn comprehensive_api::structs::TupleStructDoubleWithPrivate::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::structs::TupleStructDoubleWithPrivate where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::TupleStructDoubleWithPrivate where U: core::convert::Into<T>
-pub type comprehensive_api::structs::TupleStructDoubleWithPrivate::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::TupleStructDoubleWithPrivate where U: core::convert::Into<T>]
+pub type comprehensive_api::structs::TupleStructDoubleWithPrivate::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::TupleStructDoubleWithPrivate where U: core::convert::Into<T>]
 pub fn comprehensive_api::structs::TupleStructDoubleWithPrivate::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::TupleStructDoubleWithPrivate where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::structs::TupleStructDoubleWithPrivate where U: core::convert::TryFrom<T>
 pub type comprehensive_api::structs::TupleStructDoubleWithPrivate::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::structs::TupleStructDoubleWithPrivate where U: core::convert::TryFrom<T>]
@@ -898,7 +898,7 @@ impl core::panic::unwind_safe::UnwindSafe for comprehensive_api::structs::TupleS
 impl<T, U> core::convert::Into<U> for comprehensive_api::structs::TupleStructSingle where U: core::convert::From<T>
 pub fn comprehensive_api::structs::TupleStructSingle::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::structs::TupleStructSingle where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::TupleStructSingle where U: core::convert::Into<T>
-pub type comprehensive_api::structs::TupleStructSingle::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::TupleStructSingle where U: core::convert::Into<T>]
+pub type comprehensive_api::structs::TupleStructSingle::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::TupleStructSingle where U: core::convert::Into<T>]
 pub fn comprehensive_api::structs::TupleStructSingle::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::TupleStructSingle where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::structs::TupleStructSingle where U: core::convert::TryFrom<T>
 pub type comprehensive_api::structs::TupleStructSingle::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::structs::TupleStructSingle where U: core::convert::TryFrom<T>]
@@ -929,7 +929,7 @@ impl core::panic::unwind_safe::UnwindSafe for comprehensive_api::structs::Unit
 impl<T, U> core::convert::Into<U> for comprehensive_api::structs::Unit where U: core::convert::From<T>
 pub fn comprehensive_api::structs::Unit::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::structs::Unit where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::Unit where U: core::convert::Into<T>
-pub type comprehensive_api::structs::Unit::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::Unit where U: core::convert::Into<T>]
+pub type comprehensive_api::structs::Unit::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::Unit where U: core::convert::Into<T>]
 pub fn comprehensive_api::structs::Unit::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::Unit where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::structs::Unit where U: core::convert::TryFrom<T>
 pub type comprehensive_api::structs::Unit::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::structs::Unit where U: core::convert::TryFrom<T>]
@@ -965,7 +965,7 @@ impl<'a, T> core::panic::unwind_safe::UnwindSafe for comprehensive_api::structs:
 impl<T, U> core::convert::Into<U> for comprehensive_api::structs::WithLifetimeAndGenericParam<'a, T> where U: core::convert::From<T>
 pub fn comprehensive_api::structs::WithLifetimeAndGenericParam<'a, T>::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::structs::WithLifetimeAndGenericParam<'a, T> where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::WithLifetimeAndGenericParam<'a, T> where U: core::convert::Into<T>
-pub type comprehensive_api::structs::WithLifetimeAndGenericParam<'a, T>::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::WithLifetimeAndGenericParam<'a, T> where U: core::convert::Into<T>]
+pub type comprehensive_api::structs::WithLifetimeAndGenericParam<'a, T>::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::WithLifetimeAndGenericParam<'a, T> where U: core::convert::Into<T>]
 pub fn comprehensive_api::structs::WithLifetimeAndGenericParam<'a, T>::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::WithLifetimeAndGenericParam<'a, T> where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::structs::WithLifetimeAndGenericParam<'a, T> where U: core::convert::TryFrom<T>
 pub type comprehensive_api::structs::WithLifetimeAndGenericParam<'a, T>::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::structs::WithLifetimeAndGenericParam<'a, T> where U: core::convert::TryFrom<T>]
@@ -989,7 +989,7 @@ impl<T> core::panic::unwind_safe::UnwindSafe for comprehensive_api::structs::Wit
 impl<T, U> core::convert::Into<U> for comprehensive_api::structs::WithTraitBounds<T> where U: core::convert::From<T>
 pub fn comprehensive_api::structs::WithTraitBounds<T>::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::structs::WithTraitBounds<T> where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::WithTraitBounds<T> where U: core::convert::Into<T>
-pub type comprehensive_api::structs::WithTraitBounds<T>::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::WithTraitBounds<T> where U: core::convert::Into<T>]
+pub type comprehensive_api::structs::WithTraitBounds<T>::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::WithTraitBounds<T> where U: core::convert::Into<T>]
 pub fn comprehensive_api::structs::WithTraitBounds<T>::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::WithTraitBounds<T> where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::structs::WithTraitBounds<T> where U: core::convert::TryFrom<T>
 pub type comprehensive_api::structs::WithTraitBounds<T>::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::structs::WithTraitBounds<T> where U: core::convert::TryFrom<T>]
@@ -1077,7 +1077,7 @@ impl core::panic::unwind_safe::UnwindSafe for comprehensive_api::unions::Basic
 impl<T, U> core::convert::Into<U> for comprehensive_api::unions::Basic where U: core::convert::From<T>
 pub fn comprehensive_api::unions::Basic::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::unions::Basic where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::unions::Basic where U: core::convert::Into<T>
-pub type comprehensive_api::unions::Basic::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::unions::Basic where U: core::convert::Into<T>]
+pub type comprehensive_api::unions::Basic::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::unions::Basic where U: core::convert::Into<T>]
 pub fn comprehensive_api::unions::Basic::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::unions::Basic where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::unions::Basic where U: core::convert::TryFrom<T>
 pub type comprehensive_api::unions::Basic::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::unions::Basic where U: core::convert::TryFrom<T>]
@@ -1113,7 +1113,7 @@ impl core::panic::unwind_safe::UnwindSafe for comprehensive_api::structs::Plain
 impl<T, U> core::convert::Into<U> for comprehensive_api::structs::Plain where U: core::convert::From<T>
 pub fn comprehensive_api::structs::Plain::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::structs::Plain where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::Plain where U: core::convert::Into<T>
-pub type comprehensive_api::structs::Plain::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::Plain where U: core::convert::Into<T>]
+pub type comprehensive_api::structs::Plain::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::Plain where U: core::convert::Into<T>]
 pub fn comprehensive_api::structs::Plain::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::Plain where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::structs::Plain where U: core::convert::TryFrom<T>
 pub type comprehensive_api::structs::Plain::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::structs::Plain where U: core::convert::TryFrom<T>]
@@ -1148,7 +1148,7 @@ impl core::panic::unwind_safe::UnwindSafe for comprehensive_api::structs::Plain
 impl<T, U> core::convert::Into<U> for comprehensive_api::structs::Plain where U: core::convert::From<T>
 pub fn comprehensive_api::structs::Plain::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::structs::Plain where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::Plain where U: core::convert::Into<T>
-pub type comprehensive_api::structs::Plain::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::Plain where U: core::convert::Into<T>]
+pub type comprehensive_api::structs::Plain::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::Plain where U: core::convert::Into<T>]
 pub fn comprehensive_api::structs::Plain::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::structs::Plain where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::structs::Plain where U: core::convert::TryFrom<T>
 pub type comprehensive_api::structs::Plain::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::structs::Plain where U: core::convert::TryFrom<T>]
@@ -1176,7 +1176,7 @@ impl core::panic::unwind_safe::UnwindSafe for comprehensive_api::Struct
 impl<T, U> core::convert::Into<U> for comprehensive_api::Struct where U: core::convert::From<T>
 pub fn comprehensive_api::Struct::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::Struct where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::Struct where U: core::convert::Into<T>
-pub type comprehensive_api::Struct::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::Struct where U: core::convert::Into<T>]
+pub type comprehensive_api::Struct::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::Struct where U: core::convert::Into<T>]
 pub fn comprehensive_api::Struct::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::Struct where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::Struct where U: core::convert::TryFrom<T>
 pub type comprehensive_api::Struct::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::Struct where U: core::convert::TryFrom<T>]
@@ -1200,7 +1200,7 @@ impl core::panic::unwind_safe::UnwindSafe for comprehensive_api::StructInPrivate
 impl<T, U> core::convert::Into<U> for comprehensive_api::StructInPrivateMod where U: core::convert::From<T>
 pub fn comprehensive_api::StructInPrivateMod::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::StructInPrivateMod where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::StructInPrivateMod where U: core::convert::Into<T>
-pub type comprehensive_api::StructInPrivateMod::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::StructInPrivateMod where U: core::convert::Into<T>]
+pub type comprehensive_api::StructInPrivateMod::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::StructInPrivateMod where U: core::convert::Into<T>]
 pub fn comprehensive_api::StructInPrivateMod::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::StructInPrivateMod where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::StructInPrivateMod where U: core::convert::TryFrom<T>
 pub type comprehensive_api::StructInPrivateMod::Error = <U as core::convert::TryFrom<T>>::Error [impl: impl<T, U> core::convert::TryInto<U> for comprehensive_api::StructInPrivateMod where U: core::convert::TryFrom<T>]
@@ -1237,8 +1237,8 @@ pub fn comprehensive_api::StructV2::into(self) -> U [impl: impl<T, U> core::conv
 pub fn comprehensive_api::StructV2::into(self) -> U [impl: impl<T, U> core::convert::Into<U> for comprehensive_api::StructV2 where U: core::convert::From<T>]
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::StructV2 where U: core::convert::Into<T>
 impl<T, U> core::convert::TryFrom<U> for comprehensive_api::StructV2 where U: core::convert::Into<T>
-pub type comprehensive_api::StructV2::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::StructV2 where U: core::convert::Into<T>]
-pub type comprehensive_api::StructV2::Error = core::convert::Infallible [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::StructV2 where U: core::convert::Into<T>]
+pub type comprehensive_api::StructV2::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::StructV2 where U: core::convert::Into<T>]
+pub type comprehensive_api::StructV2::Error = never [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::StructV2 where U: core::convert::Into<T>]
 pub fn comprehensive_api::StructV2::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::StructV2 where U: core::convert::Into<T>]
 pub fn comprehensive_api::StructV2::try_from(U) -> core::result::Result<T, <T as core::convert::TryFrom<U>>::Error> [impl: impl<T, U> core::convert::TryFrom<U> for comprehensive_api::StructV2 where U: core::convert::Into<T>]
 impl<T, U> core::convert::TryInto<U> for comprehensive_api::StructV2 where U: core::convert::TryFrom<T>
