@@ -41,4 +41,4 @@ jobs:
           persist-credentials: false
       - uses: ./.github/actions/setup-rbmt
       - name: "Run ${{ matrix.task }}"
-        run: cargo rbmt ${{ matrix.task }}
+        run: cargo rbmt ${{ matrix.task }} --lockfile maximum
