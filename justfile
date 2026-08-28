@@ -30,11 +30,8 @@ fmt: (rbmt "fmt")
 # Check workspace lints
 lint: (rbmt "lint --lockfile maximum")
 
-# Test workspace
+# Test workspace (requires nightly toolchain)
 test: (rbmt "test --lockfile minimal --toolchain nightly")
-
-# Check prerelease
-prerelease: (rbmt "prerelease --force")
 
 # Re-bless the API snapshots
 bless: tools
