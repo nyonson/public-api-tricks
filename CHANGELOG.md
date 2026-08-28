@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-## 0.1.1 - 2026-08-28
+## [0.1.1] - 2026-08-28
 
 * Add the `build_with_env` function to allow setting environment variables like `RUSTUP_TOOLCHAIN`.
 
