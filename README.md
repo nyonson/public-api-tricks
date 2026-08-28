@@ -16,18 +16,17 @@ a breaking schema bump requires a new `rustdoc-types` release. In practice a giv
 crate supports a range of nightlies.
 
 Rendered output is nightly-sensitive (e.g. auto-trait sets, `Infallible` vs `never`), so snapshots
-and diffs are only comparable when built with the same toolchain. `build` respects the standard
-`RUSTUP_TOOLCHAIN` variable; otherwise it uses the default toolchain (which must be nightly — the
-`-Z` flags otherwise fail with the standard nightly hint).
+and diffs are only comparable when built with the same toolchain.
 
 ### Compatibility
 
-| Version | `rustdoc-types` | Supported nightlies  |
-| ------- | --------------- | -------------------- |
-| 0.1.x   | 0.59.x          | nightly-2025-11-22 — |
+| Version | `rustdoc-types` | Supported nightlies   |
+| ------- | --------------- | --------------------- |
+| 0.1.x   | 0.59.x          | nightly-2025-11-22 -- |
 
 ## Acknowledgements
 
 `public-api-tricks` is derived from
 [`public-api`](https://github.com/cargo-public-api/cargo-public-api). It was spun out in order to
-support analysis of the semver-trick.
+support analysis of the semver-trick which requires some non-trivial plumbing throughout the
+codebase.
