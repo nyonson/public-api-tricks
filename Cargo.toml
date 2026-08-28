@@ -1,6 +1,6 @@
 [package]
 name = "public-api-tricks"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 license = "MIT OR Apache-2.0"
 description = "Public API listing and diffing with external re-export (semver trick) resolution"
