@@ -79,7 +79,7 @@ impl<'c> CrateSet<'c> {
         self.external_tags.get(&crate_id).copied()
     }
 
-    pub fn get_item(&mut self, tag: CrateTag, id: Id) -> Option<&'c Item> {
+    pub fn get_item(&self, tag: CrateTag, id: Id) -> Option<&'c Item> {
         self.get(tag).index.get(&id)
     }
 }

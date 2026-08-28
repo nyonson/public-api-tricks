@@ -53,7 +53,7 @@ struct DepArtifact {
 }
 
 impl BuildDriver {
-    fn new(manifest_path: &Path, cargo_args: &[String]) -> Result<Self> {
+    fn new(manifest_path: &Path, cargo_args: &[&str]) -> Result<Self> {
         let metadata = Self::cargo_metadata(manifest_path, cargo_args)?;
         let lib_name = metadata
             .packages
@@ -70,7 +70,7 @@ impl BuildDriver {
             })?;
         Ok(Self {
             manifest_path: manifest_path.to_path_buf(),
-            cargo_args: cargo_args.to_vec(),
+            cargo_args: cargo_args.iter().map(|s| s.to_string()).collect(),
             lib_name,
             doc_dir: PathBuf::from(metadata.target_directory).join("doc"),
         })
@@ -123,7 +123,8 @@ impl BuildDriver {
     /// Build the rustdoc JSON for the crate under analysis, returning its path and the dependency
     /// artifacts discovered from the compiler messages.
     fn build_main_json(&self) -> Result<(PathBuf, Vec<DepArtifact>)> {
-        let output = Self::rustdoc_command(&self.manifest_path, &self.cargo_args, true)
+        let args: Vec<&str> = self.cargo_args.iter().map(|s| s.as_str()).collect();
+        let output = Self::rustdoc_command(&self.manifest_path, &args, true)
             .output()
             .map_err(|e| Error::Cargo(e.to_string()))?;
         if !output.status.success() {
@@ -185,10 +186,11 @@ impl BuildDriver {
     /// Build the rustdoc JSON for a re-exported dependency, with exactly the features it is
     /// compiled with in this configuration.
     fn build_dep_json(&self, dep: &DepArtifact) -> Result<PathBuf> {
-        let mut args = vec!["--no-default-features".to_string()];
+        let mut args: Vec<String> = vec!["--no-default-features".into()];
         if !dep.features.is_empty() {
             args.push(format!("--features={}", dep.features.join(",")));
         }
+        let args: Vec<&str> = args.iter().map(String::as_str).collect();
         let status = Self::rustdoc_command(&dep.manifest_path, &args, false)
             // Write the JSON into the main crate's target dir, not the dependency's own (which may
             // be the read-only cargo registry).
@@ -210,7 +212,7 @@ impl BuildDriver {
     /// arguments. Passing `--message-format=json` also produces cargo's artifact messages on stdout
     /// (used for dependency discovery). `RUSTDOCFLAGS` suppresses warnings-only doc errors (e.g.
     /// broken intra-doc links with limited feature sets) so they do not fail the JSON build.
-    fn rustdoc_command(manifest: &Path, cargo_args: &[String], message_json: bool) -> Command {
+    fn rustdoc_command(manifest: &Path, cargo_args: &[&str], message_json: bool) -> Command {
         let mut cmd = Command::new("cargo");
         cmd.arg("rustdoc")
             .arg("--lib")
@@ -236,7 +238,7 @@ impl BuildDriver {
     }
 
     /// Run `cargo metadata` for the manifest with the given feature arguments.
-    fn cargo_metadata(manifest_path: &Path, cargo_args: &[String]) -> Result<Metadata> {
+    fn cargo_metadata(manifest_path: &Path, cargo_args: &[&str]) -> Result<Metadata> {
         let mut cmd = Command::new("cargo");
         cmd.arg("metadata")
             .arg("--format-version")
@@ -262,7 +264,7 @@ impl BuildDriver {
 /// Rustdoc JSON is generated for the crate. If it publicly re-exports items of an external crate
 /// (e.g. the "semver trick"), rustdoc JSON is also generated for that external crate with
 /// exactly the features it is compiled with in this configuration.
-pub fn build(manifest_path: &Path, cargo_args: &[String]) -> Result<PublicApi> {
+pub fn build(manifest_path: &Path, cargo_args: &[&str]) -> Result<PublicApi> {
     let builder = BuildDriver::new(manifest_path, cargo_args)?;
     builder.run()
 }

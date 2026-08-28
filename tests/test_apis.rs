@@ -26,7 +26,7 @@ fn fixture(name: &str) -> PathBuf {
 
 /// Build the public API of the fixture crate `name`, without default features.
 fn api(name: &str) -> public_api_tricks::PublicApi {
-    build(&fixture(name), &["--no-default-features".to_string()])
+    build(&fixture(name), &["--no-default-features"])
         .unwrap_or_else(|e| panic!("building {name}: {e}"))
 }
 

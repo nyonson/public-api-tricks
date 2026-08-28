@@ -6,6 +6,7 @@ license = "MIT OR Apache-2.0"
 description = "Public API listing and diffing with external re-export (semver trick) resolution"
 repository = "https://github.com/nyonson/public-api-tricks"
 rust-version = "1.85"
+categories = ["development-tools"]
 
 [dependencies]
 rustdoc-types = "0.59.0"

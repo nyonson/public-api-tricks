@@ -5,7 +5,7 @@ use std::path::PathBuf;
 use public_api_tricks::{PublicApi, PublicApiDiff};
 
 /// Build the public API of the fixture crate `name` with the given cargo args.
-fn api(name: &str, args: &[String]) -> PublicApi {
+fn api(name: &str, args: &[&str]) -> PublicApi {
     public_api_tricks::build(&fixture(name), args).unwrap()
 }
 
@@ -21,7 +21,7 @@ fn fixture(name: &str) -> PathBuf {
 /// `pub use`.
 #[test]
 fn reexport_external() {
-    let api = api("reexport_external", &["--no-default-features".to_string()]);
+    let api = api("reexport_external", &["--no-default-features"]);
 
     let text: Vec<String> = api.items().map(|i| i.to_string()).collect();
 
@@ -50,7 +50,7 @@ fn reexport_external() {
 /// a semver-tricked backport compares equal to the native API it replaces).
 #[test]
 fn empty_diff_for_identical_api() {
-    let args = vec!["--no-default-features".to_string()];
+    let args = vec!["--no-default-features"];
     let a = api("reexport_external", &args);
     let b = api("reexport_external", &args);
     let diff = PublicApiDiff::between(a, b);
