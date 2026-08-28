@@ -34,11 +34,23 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        task: [lint, "fmt --check", docs]
+        task: [lint, docs]
     steps:
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
           persist-credentials: false
       - uses: ./.github/actions/setup-rbmt
-      - name: "Run ${{ matrix.task }}"
+      - name: "Check ${{ matrix.task }}"
         run: cargo rbmt ${{ matrix.task }} --lockfile maximum
+
+  Format:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          persist-credentials: false
+      - uses: ./.github/actions/setup-rbmt
+      - name: "Check format"
+        run: cargo rbmt fmt --check
