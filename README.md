@@ -1,6 +1,6 @@
 # public-api-tricks
 
-List and diff the public API of Rust crates, with support for the [semver
+List and diff the public API of a crate, with support for the [semver
 trick](https://github.com/dtolnay/semver-trick): public re-exports of external crates (e.g. a newer
 major version re-exported from an older major version line) are resolved and inlined.
 
@@ -29,4 +29,4 @@ and diffs are only comparable when built with the same toolchain.
 `public-api-tricks` is derived from
 [`public-api`](https://github.com/cargo-public-api/cargo-public-api). It was spun out in order to
 support analysis of the semver-trick which requires some non-trivial plumbing throughout the
-codebase.
+codebase. Further extensions are added as well, like implementation contexts.
